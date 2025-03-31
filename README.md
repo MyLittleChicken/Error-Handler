@@ -45,7 +45,8 @@ docker-compose down -v
 
 ## API 요청 예제
 
-### 상품 생성 요청 예시
+<Details>
+   <summary>use curl</summary>
 
 ```bash
 curl -X POST http://localhost:8080/api/products \
@@ -58,3 +59,16 @@ curl -X POST http://localhost:8080/api/products \
 ```bash
 curl -X GET http://localhost:8080/api/products
 ```
+</Details>
+
+<details>
+   <summary>use postman</summary>
+
+**test in a local environment, you need to install the app!**
+1. [using web](https://postman.com) or [install app](https://www.postman.com/downloads/)
+2. import collection with json file  
+   ![image](/docs/document-import.png)  
+   ![image](/docs/document-drop.png)
+3. test the API with the collection  
+   ![image](/docs/document-collection-test.png)
+</details>
