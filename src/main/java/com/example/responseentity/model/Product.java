@@ -23,12 +23,10 @@ public class Product {
     private BigDecimal price;
     
     private Integer stockQuantity;
-    
-    // 기본 생성자
+
     public Product() {
     }
-    
-    // 모든 필드를 포함한 생성자
+
     public Product(Long id, String name, String description, BigDecimal price, Integer stockQuantity) {
         this.id = id;
         this.name = name;
@@ -36,8 +34,7 @@ public class Product {
         this.price = price;
         this.stockQuantity = stockQuantity;
     }
-    
-    // Getter 및 Setter 메서드
+
     public Long getId() {
         return id;
     }
@@ -77,8 +74,7 @@ public class Product {
     public void setStockQuantity(Integer stockQuantity) {
         this.stockQuantity = stockQuantity;
     }
-    
-    // equals 및 hashCode 메서드
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -91,8 +87,7 @@ public class Product {
     public int hashCode() {
         return Objects.hash(id);
     }
-    
-    // toString 메서드
+
     @Override
     public String toString() {
         return "Product{" +
@@ -103,8 +98,7 @@ public class Product {
                 ", stockQuantity=" + stockQuantity +
                 '}';
     }
-    
-    // Builder 패턴을 위한 정적 내부 클래스
+
     public static class Builder {
         private Long id;
         private String name;
